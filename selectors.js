@@ -1,18 +1,23 @@
-// Selecting by Class Name
-const descriptions = document.getElementsByClassName("description"); console.log("Elements with
-class 'description':", descriptions);
-// Selecting by Tag Name
-const allParagraphs = document.getElementsByTagName("p"); console.log("All <p> elements:",
-allParagraphs);
-// Selecting by Name
+console.log("JavaScript file loaded successfully!");
 
-4
+document.getElementById("btn").addEventListener("click", function () {
 
-const buttonByName = document.getElementsByName("myButton"); console.log("Button with name
-'myButton':", buttonByName);
-// Using querySelector (selects first match)
-const firstParagraph = document.querySelector(".description"); console.log("First element with class
-'description':", firstParagraph);
-// Using querySelectorAll (selects all matches)
-const allDescriptions = document.querySelectorAll(".description"); console.log("All elements with
-class 'description':", allDescriptions);
+    const title = document.getElementById("title");
+    console.log("Element with ID 'title':", title);
+
+    const descriptions = document.getElementsByClassName("description");
+    console.log("Elements with class 'description':", descriptions);
+
+    const allParagraphs = document.getElementsByTagName("p");
+    console.log("All <p> elements:", allParagraphs);
+
+    const buttonByName = document.getElementsByName("myButton");
+    console.log("Button with name 'myButton':", buttonByName);
+
+    const firstParagraph = document.querySelector(".description");
+    console.log("First element with class 'description':", firstParagraph);
+
+    const allDescriptions = document.querySelectorAll(".description");
+    console.log("All elements with class 'description':", allDescriptions);
+
+});
